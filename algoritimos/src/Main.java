@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        Integer[] lista = {5, 2, 1 ,6, 7, 10};
+
+        Integer[] listaOrdenada = MergeSortUtil.ordenar(lista);
     }
 }
