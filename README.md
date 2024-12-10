@@ -10,3 +10,10 @@ O algoritmo Insertion Sort usa uma parte da matriz para armazenar os valores cla
 O algoritmo pega um valor de cada vez da parte não classificada do array e o coloca no lugar certo na parte classificada do array, até que o array seja classificado.
 
 ### Instruções para executar o código
+
+1. Certifique-se de ter o Java e o IntelliJ instalados em sua máquina, e o GitHub se desejar clonar o repositório.
+2. Clone o repositório pelo GitHub utilizando o comando git clone https://github.com/GabriellyZup/10exercicios.git .
+3. Importe o projeto no IntelliJ.
+4. Abra o arquivo Main.java .
+5. Clique no botão de execução (Run).
+6. Siga as instruções do console para escolher e executar o algoritmo.
