@@ -19,11 +19,12 @@ public class BubbleSort {
         // Exibe a lista ordenada
         System.out.println("Lista ordenada.");
         for (int num : lista) {
-            System.out.println(num + " ");
+            System.out.println(num);
         }
 
     }
 
+    // Metodo bubbleSort
     public static void bubbleSort(int[] array) {
         int n = array.length;
         boolean trocou;
