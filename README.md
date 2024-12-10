@@ -7,6 +7,7 @@ Esse projeto implementa três algoritimos( Bubble Sort, Merge Sort, Insertion So
 2. [Commits](#commits)
 3. [Documentação com Javadoc](#documentação-com-javadoc)
 4. [Algoritimos](#algoritimos)
+5. [Execução](#execucao)
 
 
 ## GitFlow
@@ -32,7 +33,19 @@ https://www.baeldung.com/javadoc
 ### Bubble Sort
 
 ### Merge Sort
-Foi utilizado essa documentação como referencia para desenvolver `MergeSortUtil`:
+Merge Sort é um algoritimo de ordenação conhecido por `dividir e conquistar`
+e possui uma complexidade de tempo de `O(n log n)`.
+
+O algoritimo divide o array *recursivamente* até que fique apenas *um elemento* para ser comparado.
+Em seguida esses elementos são combinados em ordem crescente para formar um array de resposta.
+
+Para mais detalhes sobre a implementação foi implementado um javadoc para auxiliar o uso do algoritimo.
+
+Foi utilizado essa documentação como referência para desenvolver `MergeSortUtil`:
 https://www.w3schools.com/dsa/dsa_algo_mergesort.php
 
-## Insertion Sort
+### Insertion Sort
+
+## Execução
+Para executar o projeto basta rodar a classe `Main`.
+Também pode ser executado utilizando o atalho Shift + F10
