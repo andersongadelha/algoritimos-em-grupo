@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,27 +9,15 @@ public class Main {
 
         int[] listInsertion = new int[tamanho];
 
-        for (int i = 0; i < tamanho; i++); {
+        for (int i = 0; i < tamanho; i++) {
             System.out.println("Agora digite os números para compor sua lista: ");
-            listInsertion['i'] = input.nextInt();
+            listInsertion[i] = input.nextInt();
         }
 
-        System.out.println("Lista antes da ordenação: " + listInsertion);
+        System.out.println("Lista antes da ordenação: " + Arrays.toString(listInsertion));
 
-        for (int num : listInsertion) {
-            System.out.print(num + " " );
-        }
+        InsertionSort.insertionSort(listInsertion);
 
-        System.out.print( "Lista após a ordenação: " );
-
-        for (int num : listInsertion) {
-            System.out.print(num + " " );
-        }
-
-
-
-
-
-
+        System.out.println( "Lista após a ordenação: " + Arrays.toString(listInsertion));
     }
 }
