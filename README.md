@@ -28,3 +28,11 @@ Mais detalhes sobre javadoc podem ser encontradas nesse artigo:
 https://www.baeldung.com/javadoc
 
 ## Algoritimos
+
+### Bubble Sort
+
+### Merge Sort
+Foi utilizado essa documentação como referencia para desenvolver `MergeSortUtil`:
+https://www.w3schools.com/dsa/dsa_algo_mergesort.php
+
+## Insertion Sort
