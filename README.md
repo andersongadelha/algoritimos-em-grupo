@@ -2,7 +2,7 @@
 
 ### Descrição do algoritmo escolhido
 
-O Insertion Sort é um algoritmo simples e eficiente quando aplicado em pequenas listas. Neste algoritmo a lista é percorrida da esquerda para a direita, à medida que avança vai deixando os elementos mais à esquerda ordenados.
+O Insertion Sort é um algoritmo simples e eficiente quando aplicado em pequenas listas. Possui complexidade O(n) no melhor caso e O(n²) no caso médio e pior caso.Neste algoritmo a lista é percorrida da esquerda para a direita, à medida que avança vai deixando os elementos mais à esquerda ordenados.
 
 ### Explicação do funcionamento do algoritmo
 
