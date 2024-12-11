@@ -1,6 +1,6 @@
 # Algoritimos em grupo
 
-Esse projeto implementa três algoritimos( Bubble Sort, Merge Sort, Insertion Sort ).
+Esse projeto implementa três algoritimos ( Bubble Sort, Merge Sort, Insertion Sort ).
 
 ## Indice 
 1. [GitFlow](#gitflow)
@@ -32,6 +32,8 @@ https://www.baeldung.com/javadoc
 
 ### Bubble Sort
 
+O Bubble sort é um algoritmo simples de ordenação que recebe como entrada uma lista de elementos e produz uma lista ordenada de acordo com um critério. É um algoritmo popular, mas menos eficiente em relação a outros algoritmos de ordenação. Compara os elementos adjacentes (dois a dois), por exemplo: compara-se a primeira posição do vetor com a segunda, na segunda iteração (repetição), compara-se a segunda posição do vetor com a terceira, e assim sucessivamente. De acordo com o algoritmo, podemos ordenar o vetor de forma crescente ou decrescente.
+
 ### Merge Sort
 Merge Sort é um algoritimo de ordenação conhecido por `dividir e conquistar`
 e possui uma complexidade de tempo de `O(n log n)`.
@@ -57,7 +59,7 @@ O algoritmo pega um valor de cada vez da parte não classificada do array e o co
 
 ## Execução
 1. Certifique-se de ter o Java e o IntelliJ instalados em sua máquina, e o GitHub se desejar clonar o repositório.
-2. Clone o repositório pelo GitHub utilizando o comando git clone https://github.com/GabriellyZup/10exercicios.git .
+2. Clone o repositório pelo GitHub utilizando o comando git clone https://github.com/andersongadelha/algoritimos-em-grupo
 3. Importe o projeto no IntelliJ.
 4. Para executar o projeto basta rodar a classe `Main`.
 Também pode ser executado utilizando o atalho Shift + F10
