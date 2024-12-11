@@ -1,4 +1,6 @@
+import javax.swing.*;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,6 +13,7 @@ public class Main {
         int[] listaOrdenadaComUmElemento = MergeSortUtil.ordenar(listaComUmElemento);
         int[] listaVaziaOrdenada = MergeSortUtil.ordenar(listaVazia);
 
+        System.out.println("Inicio de testes para Merge Sort:");
         System.out.println("Teste para ordenar array:");
         System.out.println("Lista Original: " + Arrays.toString(lista));
         System.out.println("Lista Ordenada: " + Arrays.toString(listaOrdenada));
@@ -23,16 +26,8 @@ public class Main {
         System.out.println("Lista Original: " + Arrays.toString(listaVazia));
         System.out.println("Lista Ordenada: " + Arrays.toString(listaVaziaOrdenada));
         testeComparacao(listaVaziaOrdenada, listaVazia);
-    }
 
-    private static void testeComparacao(int[] listaOrdenada, int[] resultadoEsperado) {
-        if (Arrays.toString(listaOrdenada).equals(Arrays.toString(resultadoEsperado))){
-            System.out.println("Resultado esperado: " + Arrays.toString(resultadoEsperado));
-            System.out.println("Passou!");
-        } else {
-            System.out.println("Resultado esperado: " + Arrays.toString(resultadoEsperado));
-            System.out.println("Falhou!");
-        }
+        System.out.println("Inicio de execução de Insertion Sort");
         Scanner input = new Scanner(System.in);
 
         // envia mensagem para o usuário escolher o tamanho da sua lista
@@ -56,5 +51,35 @@ public class Main {
 
         // imprime lista após ordenação em ordem crescente
         System.out.println( "Lista após a ordenação: " + Arrays.toString(listInsertion));
+
+        System.out.println("Inicio de execução do Bubble Sort:");
+        // Pergunta o tamanho da lista
+        int tamanhoBubbleSort = Integer.parseInt(JOptionPane.showInputDialog("Digite o tamanho da lista: "));
+
+        // Cria o Array
+        int[] listaBubbleSort = new int[tamanhoBubbleSort];
+
+        // Pergunta os itens da lista
+        for (int i = 0; i < tamanhoBubbleSort; i++) {
+            listaBubbleSort[i] = Integer.parseInt(JOptionPane.showInputDialog("Digite os itens da lista: "));
+        }
+
+        BubbleSort.bubbleSort(listaBubbleSort);
+
+        // Exibe a lista ordenada
+        System.out.println("Lista ordenada.");
+        for (int num : listaBubbleSort) {
+            System.out.println(num);
+        }
+    }
+
+    private static void testeComparacao(int[] listaOrdenada, int[] resultadoEsperado) {
+        if (Arrays.toString(listaOrdenada).equals(Arrays.toString(resultadoEsperado))) {
+            System.out.println("Resultado esperado: " + Arrays.toString(resultadoEsperado));
+            System.out.println("Passou!");
+        } else {
+            System.out.println("Resultado esperado: " + Arrays.toString(resultadoEsperado));
+            System.out.println("Falhou!");
+        }
     }
 }
