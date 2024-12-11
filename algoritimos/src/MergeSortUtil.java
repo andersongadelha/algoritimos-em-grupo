@@ -16,7 +16,7 @@ public class MergeSortUtil {
      * @param lista um array de inteiros a ser ordenado
      * @return retorna um novo array de inteiros ordenado.
      */
-    public static Integer[] ordenar(Integer[] lista) {
+    public static int[] ordenar(int[] lista) {
         //Caso a lista tenha apenas um elemento ou esteja vazia, ela não vai precisar de ordenação e pode ser retornada
         if (lista.length < 2) {
             return lista.clone();
@@ -24,8 +24,8 @@ public class MergeSortUtil {
 
         //Divide a lista no meio
         int meio = lista.length / 2;
-        Integer[] esquerda = Arrays.copyOfRange(lista, 0, meio);
-        Integer[] direita = Arrays.copyOfRange(lista, meio, lista.length);
+        int[] esquerda = Arrays.copyOfRange(lista, 0, meio);
+        int[] direita = Arrays.copyOfRange(lista, meio, lista.length);
 
         //Chama recursivamente até que fique apenas um elemento
         esquerda = ordenar(esquerda);
@@ -35,9 +35,9 @@ public class MergeSortUtil {
         return merge(esquerda, direita);
     }
 
-    private static Integer[] merge(Integer[] esquerda, Integer[] direita) {
+    private static int[] merge(int[] esquerda, int[] direita) {
         //Define uma nova lista que tenha o tamanho das duas listas juntas
-        Integer[] resultado = new Integer[esquerda.length + direita.length];
+        int[] resultado = new int[esquerda.length + direita.length];
 
         int indiceParaArrayEsquerdo = 0;
         int indiceParaArrayDireito = 0;
